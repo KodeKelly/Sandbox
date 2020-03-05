@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.header{
+    height: 20%;
+    background-color: lightsteelblue;
+    
+    display: grid;
+    
+}
+
+h1{
+    color: blue;
+}
+
+span{
+    font-size: 1.75em;
+    align-self: center;
+    justify-self: center;
+    background-color: azure; 
+}
+
+
+
+.showcase{
+    margin: auto;
+    width: 80%;
+    height: 80%;    
+    background-color: lightgreen;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "header header header"
+    "navbar content content"
+    " footer footer footer";
+    
+}
+
+.box{
+    background-color: grey;
+    min-height: 30px
+}
+
+.box1{
+    background-color: blue;
+    grid-area: header;
+}
+
+.box2{
+    grid-area: navbar;
+}
+
+.box4{
+    background-color: blue;
+    grid-area: content;
+    min-height: 100px;
+    display: grid;
+}
+
+.box3{
+    grid-area: footer;
+}
